@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %> | FB APP JS BASE</title>
+		<%include ./partials/head %>
+	</head>
+	<body class="container">
+		<%include ./partials/fbjssdk %>
+		<div class="row">
+			<div
+			  class="fb-like"
+			  data-share="true"
+			  data-width="450"
+			  data-show-faces="true">
+			</div>
+		</div>
+		<div class="row">
+			<%include ./partials/content %>
+			<%include ./partials/sidebar %>
+		</div>
+	</body>
+</html>
