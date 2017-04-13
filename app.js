@@ -10,6 +10,11 @@ app.use('/css', express.static(__dirname + '/assets/css'));
 app.use('/js', express.static(__dirname + '/assets/js'));
 app.use('/img', express.static(__dirname + '/assets/img'));
 
+app.post('/',(req,res)=>{
+	console.log('authentication successful');
+	res.redirect('/user/samson');
+})
+
 router.get('/',(req,res)=>{
 	res.render('index',{title:'home',content:'This is the main content area',sidebar:'welcome to the sidebar'});
 });
